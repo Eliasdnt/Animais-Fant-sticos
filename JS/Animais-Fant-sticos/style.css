@@ -1,0 +1,224 @@
+*::-webkit-scrollbar {
+  width: 1px;
+  display: none;
+}
+
+body {
+  margin: 0 auto;
+  background: #faf6ed;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  /* Web kit para limpar a fonte */
+  display: grid;
+  grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+}
+
+.menu {
+  grid-column: 3 / 5;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: #fb5;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-items: center;
+}
+.menu li {
+  list-style: none;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  margin-right: 10px;
+  color: #222;
+  text-decoration: none;
+  /* font-family: 'IBM Plex Mono', monospace; */
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+}
+
+.menu .pic-menu {
+  margin-left: 40px;
+}
+
+.title-inicial-page {
+  font-family: "Playfair Display SC", serif;
+  display: grid;
+  gap: 80px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  margin: 0 auto;
+  grid-column: 2/4;
+}
+.title-inicial-page h1 {
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 400;
+  grid-column: 1/4;
+}
+
+.scroll {
+  overflow-y: scroll;
+  height: 380px;
+  max-width: 100%;
+  padding: 0;
+  padding-right: 5px;
+}
+
+.animals-desc p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+.title-inicial-page ul li {
+  list-style: none;
+}
+.title-inicial-page ul li img {
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+  height: 380px;
+}
+.title-inicial-page .scroll::-webkit-scrollbar {
+  width: 18px;
+}
+.title-inicial-page .scroll::-webkit-scrollbar-thumb {
+  background-color: #fb5;
+}
+.animals-desc {
+  grid-column: 2/4;
+}
+.animals-desc h2 {
+  font-family: "Poppins", monospace;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  color: #e54;
+  font-weight: bold;
+  position: relative;
+}
+.animals-desc h2::before {
+  content: "";
+  width: 20px;
+  height: 5px;
+  border-radius: 4px;
+  background-color: #fb5;
+  opacity: 0.9;
+  position: absolute;
+  left: -25px;
+  top: 6px;
+}
+.faq {
+  grid-column: 2 / 4;
+  display: grid;
+  margin-bottom: 100px;
+  gap: 0px;
+  grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+}
+
+.faq dt {
+  font-family: "Poppins", monospace;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #e54;
+  position: relative;
+  margin-bottom: 20px;
+}
+.faq dt::before {
+  content: "";
+  width: 20px;
+  height: 5px;
+  border-radius: 4px;
+  background-color: #fb5;
+  opacity: 0.9;
+  position: absolute;
+  left: -25px;
+  top: 6px;
+}
+
+.faq dd {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.loc-content-faq {
+  grid-column: 3/4;
+}
+
+.loc-mini-pic {
+  grid-column: 3/4;
+}
+.mini-pic {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.mini-pic li {
+  list-style: none;
+}
+.mini-pic li img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.title-inicial-page h1 {
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 400;
+  grid-column: 1/4;
+}
+
+.loc-content-numbers {
+  grid-column: 3/4;
+  margin-bottom: 100px;
+}
+.loc-content-numbers ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+.loc-content-numbers ul li {
+  list-style: none;
+  display: block;
+  font-family: "Playfair Display SC";
+  font-size: 2rem;
+}
+.loc-content-numbers ul li span {
+  display: block;
+  color: #e51;
+  font-family: "Playfair Display SC";
+  font-size: 2rem;
+}
+.swiper {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  height: 100%;
+}
+.swiper-wrapper {
+  display: flex;
+  gap: 40px;
+}
+.swiper-slide img {
+  /* display: block;
+    max-width: 100%; */
+  display: block;
+  width: 100%;
+
+}
+
+/* .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
