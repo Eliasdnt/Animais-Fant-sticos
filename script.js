@@ -13,6 +13,25 @@ document.addEventListener("DOMContentLoaded", function() {
                 descricao.style.display = "none";
             });
             descricoes[index].style.display = "block";
+            descricoes[index].style.animation ="show 0.6s forwards"
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const accordionlist = document.querySelectorAll('.js-accordion dt');
+    
+    accordionlist[0].classList.add('ativo');
+    accordionlist[0].nextElementSibling.classList.add('ativo');
+
+    function activeAccordion(){
+        this.classList.toggle('ativo');
+        this.nextElementSibling.classList.toggle('ativo');
+    }
+
+    accordionlist.forEach((item) => {
+        item.addEventListener('click', activeAccordion)
+    });
+});
+
+

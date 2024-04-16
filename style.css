@@ -89,7 +89,21 @@ body {
 .animals-desc {
   /* display: none; */
   grid-column: 2/4;
+  animation: show 0.6s ;
 }
+
+
+@keyframes show{
+  from{
+    opacity: 0;
+    transform: matrix3d(-30px,0,0);
+  }
+  to{
+    opacity: 1;
+    transform: matrix3d(0,0,0);
+  }
+}
+
 .animals-desc h2 {
   font-family: "Poppins", monospace;
   font-size: 1rem;
@@ -146,6 +160,23 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.js-accordion dd{
+  display: none;
+}
+.js-accordion dd.ativo{
+  display: block;
+}
+
+.js-accordion dt::after{
+    content: "!" ;
+    margin-left: 10px;
+}
+.js-accordion dt.ativo::after{
+  content: "?";
+}
+
+
 .loc-content-faq {
   grid-column: 3/4;
 }
@@ -244,3 +275,6 @@ body {
 }
 
 
+.dashboard{
+  display: flex;
+}
