@@ -50,6 +50,7 @@ function scrollSuave() {
             section.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start',
+                duration: 1000,
             });
         }
     }
