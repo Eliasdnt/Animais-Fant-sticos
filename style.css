@@ -188,6 +188,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
+
 }
 .mini-pic li {
   list-style: none;
