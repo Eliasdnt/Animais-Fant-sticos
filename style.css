@@ -278,3 +278,7 @@ body {
 .dashboard{
   display: flex;
 }
+  
+  .js-pics, .js-mini-pic{
+    list-style: none;
+  }
